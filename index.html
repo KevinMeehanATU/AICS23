@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>AICS 2023</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <link href="./static/css/styles.css?version=0.3" rel="stylesheet" />
+    <link href="./static/css/prog_styles.css" rel="stylesheet" />
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- Sortable table imports -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    
+</head>                                                                                      
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 navbar-shrink" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a href="index.html"> <img src="./static/assets/img/logo2.png" width="150px"> </a>
+            <a class="navbar-brand" href="#page-top"><!--AICS 2022--></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                                             
+		    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./programme.html">Programme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./submission.html">Submission</a></li>
+                    <!--<li class=" nav-item custom_dropdown">
+                        <a class="nav-link" href="#registration">Registration</a>
+                        <div class="custom_dropdown_content">
+                            <a class="custom_dropdown-item" href="#accommodation">Accommodation</a><br>
+                            <a class="custom_dropdown-item" href="#travel">Travel</a><br>
+                        </div>
+                    </li>-->
+                    <li class="nav-item"><a class="nav-link" href="#organisation">Organisation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Sponsors">Sponsors</a></li>
+		    <!--<li><a href="https://twitter.com/aicsconference" class="btn btn-light btn-sm bi-twitter fs-6 text-primary">@aicsconference</a></li>-->
+                    <!--
+                                            <li class="nav-item"><a class="nav-link" href="/#keynote">Keynotes</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="/#authors">Author <br/>Instructions</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="/#registration">Registration</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="/programme.html#programme">Programme</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="http://ceur-ws.org/Vol-3105/" target = "blank">Conference <br/>Proceedings</a></li>
+                    -->
+                    <!--                         <li class="nav-item"><a class="nav-link" href="#programme">Programme</a></li> -->
+                    <!--                         <li class="nav-item"><a class="nav-link" href="/publications">Publications</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead-->
+    <section>
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <br>
+                        <h2 class="text-white font-weight-bold">
+                            31st Irish
+                            Conference on Artificial Intelligence and Cognitive Science
+                        </h2><br/>
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">
+                            December 7th-8th, 2023<br>
+                            Atlantic Technological University<br/><i>Letterkenny, Donegal</i>
+                            <br><br>
+                            <strong>Paper Submission Deadline - 24th September 2023</strong>  <br>
+                            Acceptance Notification for all Papers - 1st November 2023<br>
+                            Camera Ready Submissions (all tracks) -  8th November 2023<br>
+                        </p>
+
+                        <!--<p>
+
+                            <a class="btn btn-primary btn-xl" href="#registration">Registration and Programme</a>
+                            <a class="btn btn-primary btn-xl" href="#accommodation">Accommodation and Travel</a>
+
+                            
+                                <a class="btn btn-primary btn-xl" href="#authors">Author Instructions and Dates</a>
+                                <a class="btn btn-primary btn-xl" href="https://easychair.org/conferences/?conf=aics-2022">Submit to Easychair</a>
+                            
+                        </p>
+                        <p>
+                            <a class="btn btn-primary btn-xl" href="./programme.html">View Full Programme</a>
+                        </p>-->
+                        <!--
+                           <p>
+                           <a class="btn btn-primary btn-xl btn-success" href="http://ceur-ws.org/Vol-3105/" target = "blank">Conference Proceedings</a>
+                           </p>
+                          
+						<br> -->
+                        <p>
+                            <!--<a class="btn btn-primary btn-xl" href="./static/assets/files/AICS2022_Digital_Book_of_Abstracts.pdf" download>Download the Book Of Abstracts</a>-->
+                        </p>
+                    </div>
+                    <div class="d-flex flex-wrap flex-row justify-content-start align-items-center">
+                        <div class="col flex-shrink-1">
+                            <a class="thumbnail" href="#">
+                                <img class="thumbnail img-responsive" src="./static/assets/img/atu-logo.png" width="320px" alt="Atlantic Technological University logo">
+                            </a>
+                        </div>
+                        <div class="col flex-shrink-1">
+                            <a class="thumbnail" href="#">
+                                <img class="thumbnail img-responsive" src="./static/assets/img/AIAI_logo.png" width="150px" alt="Artificial Intelligence Association of Ireland (AIAI)">
+                            </a>
+                        </div>
+			<div class="col flex-shrink-1">
+                            <a class="thumbnail" href="#">
+                                <img class="thumbnail img-responsive" src="./static/assets/img/ieee-logo.png" width="150px" alt="IEEE logo">
+                            </a>
+                        </div>
+                        <div class="col flex-shrink-1">
+                            <a class="thumbnail" href="#">
+                                <img class="thumbnail img-responsive" src="./static/assets/img/uu-logo.png" width="220px" alt="Ulster University logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </header>
+        <!-- About-->
+    </section>
+
+    <section class="page-section bg-dark" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-left">
+                    <center><h2 class="text-white mt-0">AICS 2023</h2></center>
+                    <hr class="divider" />
+                    <p class="text-white-75 mb-4">
+                        The 31st Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2023) will be hosted by Atlantic Technological University (ATU) in collaboration with Ulster University. The conference will be held in-person at the Letterkenny campus of ATU Donegal.
+                    </p>
+                    <p class="text-white-75 mb-4">
+                        With regular conferences dating back to 1988, the AICS Conference is Ireland’s primary forum bringing together researchers in the fields of Artificial Intelligence and Cognitive Science. The fields of Artificial Intelligence and Cognitive Science, encompassing areas such as; Data Analytics, Natural Language Processing, Information Retrieval, and Machine Learning, are now at the forefront of Irish computing research and industry.
+The AICS 2023 program will include presentations of high-quality theoretical and applied scientific papers and tutorials. Invited talks will describe important topics relevant to the field.
+                    </p>
+
+                    <!--                         <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Call for papers-->
+    <section class="page-section bg-light" id="calls">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-left">
+                    <h2 class="text-left mt-0">
+                        <center>Call for Papers</center>
+                    </h2>
+                    <hr class="divider" />
+                    <div class="row gx-8 gx-lg-5">
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Artificial Intelligence</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi-puzzle fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Cognitive Science</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cfp-accordion">
+                        <div class="col text-center mb-2">
+                            <button class="btn btn-primary btn-xl dropdown_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible_cfp_1" aria-controls="collapsible_cfp" aria-expanded="true" aria-label="Toggle CFP 1">Areas Of Interest<i class="arrow arrow_down"></i></button>
+                            <button class="btn btn-primary btn-xl dropdown_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible_cfp_2" aria-controls="collapsible_cfp" aria-expanded="false" aria-label="Toggle CFP 2">Submission Types<i class="arrow arrow_down"></i></button>
+                        </div>
+                        <div class="collapse" id="collapsible_cfp_1" data-bs-parent="#cfp-accordion">
+                            <p>
+                                We invite submissions in the broad areas of Artificial Intelligence and Cognitive Science to communicate the advances and achievements in these fields. Areas of interest include, but are not restricted to:
+                            </p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="text-muted mb-0">
+                                            <li>Machine learning</li>
+                                            <li>Automated reasoning</li>
+                                            <li>Natural language processing</li>
+                                            <li>Computer vision</li>
+                                            <li>Robotics</li>
+                                            <li>Planning and scheduling</li>
+                                            <li>Decision analytics</li>
+                                            <li>Moral judgment</li>
+                                            <li>Intelligent agents</li>
+                                            <li>Concept combination</li>
+                                            <li>Knowledge representation</li>
+                                            <li>Reasoning</li>
+                                            <li>Intelligent systems</li>
+                                            <li>Machine translation</li>
+                                            <li>Knowledge graphs</li>
+                                            <li>Causal inference</li>
+                                            <li>Recommender systems</li>
+                                            <li>Semantic web/linked data</li>
+                                            <li>Computer vision</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="text-muted mb-0">
+                                            <li>Neural networks</li>
+                                            <li>Deep learning</li>
+                                            <li>Dialogue systems</li>
+                                            <li>Opinion mining</li>
+                                            <li>Information systems</li>
+                                            <li>User modelling</li>
+                                            <li>Visual analytics</li>
+                                            <li>Digital twins</li>
+                                            <li>Smart environments</li>
+                                            <li>Neuro-symbolic integration</li>
+                                            <li>Social cognition</li>
+                                            <li>Cognitive robotics</li>
+                                            <li>Cognitive modelling</li>
+                                            <li>Cognitive neuroscience</li>
+                                            <li>Embodied and grounded cognition</li>
+                                            <li>Creative cognition</li>
+                                            <li>Counterfactuals</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="text-muted mb-0">
+                                            <li>Explainability</li>
+                                            <li>Cognitive psychology</li>
+                                            <li>Cyberpsychology</li>
+                                            <li>Neuroeconomics</li>
+                                            <li>Neuroethics</li>
+                                            <li>Neurolaw</li>
+                                            <li>AI and cognition</li>
+                                            <li>Cognition and simulation</li>
+                                            <li>Argumentation</li>
+                                            <li>Human perception</li>
+                                            <li>Language</li>
+                                            <li>Memory</li>
+                                            <li>Attention</li>
+                                            <li>Emotion</li>
+                                            <li>Fairness/Bias</li>
+                                            <li>Interpretability</li>
+                                            <li>Transparency</li>
+                                            <li>Ethics of AI</li>
+                                            <li>Deduction</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="row gx-4 gx-lg-5 justify-content-center"> -->
+                            <!--   <div class="col-lg-8 text-center"> -->
+                            <!--     <h2 class="text-white mt-0">About AICS 2022</h2> -->
+                            <!--     <hr class="divider divider-light" /> -->
+                            <!--     <p class="text-white-75 mb-4">The 29th Irish Conference -->
+                            <!--       on Artificial Intelligence and Cognitive Science -->
+                            <!--       (AICS2021) will be hosted by the School of Computer -->
+                            <!--       Science of the University College Dublin (UCD). This -->
+                            <!--       year, the conference will be fully online, from the 9th -->
+                            <!--       to the 10th of December.</p> -->
+                            <!--   </div> -->
+                            <!-- </div> -->
+
+                            <br>
+                            <br>
+                            <div class="row gx-4 gx-lg-12 justify-content-center">
+                                <div class="col-lg-12 text-left">
+                                    <p>
+                                        We seek articles which report on in-use experiences
+                                        (design, engineering, deployment, utility, and
+                                        challenges) of AI-based, and cognitive-based.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapsible_cfp_2" data-bs-parent="#cfp-accordion">
+                            <div class="row gx-4 gx-lg-12 justify-content-center">
+                                <div class="col-lg-12 text-left">
+                                    <p id="types">We invite two types of submissions:</p>
+                                    <ul>
+                                        <li><strong>Full Paper Track:</strong> Full paper submissions should consist of original contributions (describing either fundamental research, interesting applications, in-use experiences, or reviews of the field) not published in other forums. Papers should be no more than 6-8 pages (including references) and these will be oral presentations at conference. Papers over 6 pages will be charged €90 per extra page up to a maximum of two extra pages (8 pages maximum).</li>
+
+                                        <li><strong>Short Paper Track:</strong> This track is designed to facilitate students who have recently completed a Master’s program or for PhD students. Short paper submissions should consist of original contributions (describing interesting applications or theoretical research) and the first author must be a student. Papers should be a maximum of 4 pages (including references) and these will be poster presentations at conference.</li>
+                                    </ul>
+
+
+                                    Subject to the conference requirements for registration and attendance, and IEEE requirements (including authorship), accepted papers will be submitted for inclusion into IEEE Xplore subject to meeting IEEE Xplore’s scope and quality requirements.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Keynote Speakers SEE cut.html -->
+
+    <section class="page-section bg-light" id="authors">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-left">
+                    <h2 class="text-dark-75 mt-0">Paper Submission</h2>
+                    <hr class="divider" />
+
+                    <p class="text-dark-75 mb-4">
+                        All accepted Full-paper and Short-paper submissions will be presented at the conference, either orally or as posters, and included in the online conference proceedings. At least one author of each submission will be required to register for, and attend, the conference. All submissions must be made via the EasyChair system <a href="https://easychair.org/conferences/?conf=aics-2023">here</a>.
+                    </p>
+
+                    <p class="text-dark-75 mb-4">
+                        Prospective authors are invited to submit their work using the standard IEEE two-column format, including text, figures, and tables. Full papers should be a maximum of 8 pages and Short papers should be a maximum of 4 pages. For full papers over 6 pages, there will be a charge of €90 per extra page up to a maximum of two extra pages (8 pages maximum).
+                    </p>
+                    <p class="text-dark-75 mb-4">
+In order to achieve the same appearance for all manuscripts, AICS 2023 requires the usage of the IEEE templates in Microsoft Word (A4) and LaTeX format can be found at  <a href="https://www.ieee.org/conferences/publishing/templates.html">IEEE Manuscript Templates for Conference Proceedings</a>.
+</p>
+                    <p class="text-dark-75 mb-4">
+                        Accepted papers will be submitted to the IEEE Xplore Digital Library for publication and indexing.
+                    </p>
+                </div>
+
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <img class="img-responsive" src="./static/assets/img/Xplore.png" width="300px" alt="IEEE Xplore logo">
+                </div>
+
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center text-center">
+                <div class="col-lg-8 align-self-baseline text-dark-75 mb-4">
+                    <p><a class="btn btn-primary btn-xl" href="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/conference-template-a4.docx">Download MS Word Template</a></p>
+                    <p><a class="btn btn-primary btn-xl" href="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/conference-latex-template_10-17-19.zip">Download LaTeX Template</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Important Dates-->
+
+    <section class="page-section bg-dark" id="dates">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-left text-light">
+                    <h2 class="text-white mt-0">Important Dates</h2>
+                    <hr class="divider" />
+
+                    <!--
+                    <span class="btn btn-danger">
+                      Updated
+                    </span>
+
+                                             <p style="color:#FF0000">Note that there will be <strong>no</strong> further extensions of the deadlines below.</p> -->
+
+                    <ul>
+                        <li>Paper Submission Deadline (All Tracks) - <span style="color:#808080"></span> <strong>24th September 2023</strong></li>
+                            
+                        <li>Acceptance Notification for all Papers - <span style="color:#808080"></strong> </span> <strong>1st November 2023</strong> </li>
+
+                        <li>Camera Ready Submissions (all tracks) - <span style="color:#808080"></strong> </span><strong>8th November 2023</strong></li>
+                        <li>Conference Dates - <strong>7th - 8th December 2023</strong></li>
+                    </ul>
+                    <p> All indicated times are EOD, 23:59 Irish time.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Registration -->
+    <section class="page-section bg-light" id="registration">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <!-- Registration Column-->
+                <div class="col-md-4 text-left text-dark">
+                    <center><h2 class="mt-0 text-dark-75 mb-4">Registration</h2></center>
+                    <hr class="divider" />
+                    Registration for AICS 2023 will be available in September 2023. Estimated costs are outlined below:
+                    <br /><br />
+                    <div class="col-lg-8 align-self-baseline text-dark-75 mb-4">
+                        <ul>
+                            <li>Full Paper Author (inc. Gala dinner): €260.00</li>
+                            <li>Short Paper Author  (inc. Gala dinner): €220.00</li>
+                            <li>Attendee (inc. Gala dinner): €160.00</li>
+                            <li>Attendee (ex. Gala dinner): €100.00</li>
+                            <li>Student Attendee (inc. Gala dinner): €110.00</li>
+                            <li>Student Attendee (ex. Gala dinner): €50.00</li>
+                        </ul>
+
+                    </div>
+                    <p>
+                        Conference venue location: <a href="https://goo.gl/maps/D3B7u8WTe2kdK1yr7">Colab Building, ATU Donegal</a>
+                        </br>
+                    </p>
+
+                </div>
+                <!-- Programme Column-->
+                <div class="col-md-5 text-left text-dark">
+                    <center><h2 class="mt-0 text-dark-75 mb-4">Programme</h2></center>
+                    <hr class="divider" />
+
+                    <!-- START OF PROGRAMME COLUMN-->
+                    <div class="container py-7">
+                        <!-- Days -->
+                        <div class="row">
+                            <div class="col-lg-6 mb-3" id="Thursday, Dec 7th">
+                                <h6 class="mt-0 mb-3 text-dark op-8 font-weight-bold">
+                                    Thursday, Dec 7th
+                                </h6>
+                                <br/>
+				<h6>Conference Day 1 <br/><br/><br/>Programme not currently available.</h6>
+                            </div>
+                            <div class="col-lg-6 mb-3" id="Friday, Dec 8th">
+                                <h6 class="mt-0 mb-3 text-dark op-8 font-weight-bold">
+                                    Friday, Dec 8th
+                                </h6>
+
+  <br/>
+				<h6>Conference Day 2 <br/><br/><br/>Programme not currently available.</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- END OF PROGRAMME COLUMN-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organisation-->
+    <section class="page-section bg-dark" id="organisation">
+        <div class="container px-4 px-lg-5" id="pcm">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-left">
+                    <center><h2 class="text-white mt-0">Organisation</h2></center>
+                    <hr class="divider" />
+                    <h4 class="text-white mt-0">Conference Chairs</h4>
+                    <p class="text-darj-75 mb-4">
+                        <ul class="text-white-75 mb-4 small">
+                            <li>Dr Kevin Meehan (Atlantic Technological University), <a href="mailto:kevin.meehan@atu.ie">kevin.meehan@atu.ie</a> - General Chair</li>
+                            <li>Dr Muskaan Singh (Ulster University), <a href="mailto:m.singh@ulster.ac.uk">m.singh@ulster.ac.uk</a> - Co-chair</li>
+                            <li>Dr Karla Muñoz Esquivel (Atlantic Technological University), <a href="mailto:karla.munozesquivel@atu.ie">karla.munozesquivel@atu.ie</a>  - Co-chair</li>
+                            <li>Dr Fatemeh Golpayegani, (University College Dublin), <a href="mailto:fatemeh.golpayegani@ucd.ie">fatemeh.golpayegani@ucd.ie</a> - Co-chair</li>
+
+                        </ul>
+                    </p>
+                    <h4 class="text-white mt-0">Organising Committee</h4>
+                    <p class="text-darj-75 mb-4">
+                        <ul class="text-white-75 mb-4 small">
+                            <li>Professor Michaela Black (Ulster University)</li>
+                            <li>Dr Gerry McWilliams (Atlantic Technological University)</li>
+			    <li>Dr Bryan Gardiner (Ulster University)</li>
+                            <li>Dr Jennifer Hyndman (Atlantic Technological University)</li>
+                        </ul>
+                    </p>
+                    <p class="text-center">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            See full Programme Committee
+                        </a>
+                        <div class="collapse align-items-center" id="collapseExample">
+                            <table class="table table-dark table-striped table-responsive table-bordered" id="sortableCommitteeTable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">PC Member</th>
+                                        <th scope="col">Affiliation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>James Vincent Patten</td><td>University of Limerick</td></tr>
+                                <tr><td>Enrique Naredo</td><td>University of Limerick</td></tr>
+                                <tr><td>Malachy Eaton</td><td>University of Limerick</td></tr>
+                                <tr><td>Eoin Grua</td><td>University of Limerick</td></tr>
+                                <tr><td>Meghana Kshirsagar</td><td>University of Limerick</td></tr>
+                                <tr><td>Pepijn Van de Ven</td><td>University of Limerick</td></tr>
+                                <tr><td>John Nelson</td><td>University of Limerick</td></tr>
+                                <tr><td>Ciaran Eising</td><td>University of Limerick</td></tr>
+                                <tr><td>Katie Crowley</td><td>University of Limerick</td></tr>
+                                <tr><td>Suzanne Egan</td><td>University of Limerick</td></tr>
+                                <tr><td>Muftah Fraifer</td><td>University of Limerick</td></tr>
+                                <tr><td>Conor Hayes</td><td>University of Galway</td></tr>
+                                <tr><td>Josephine Griffith</td><td>University of Galway</td></tr>
+                                <tr><td>Pilib O Broin</td><td>University of Galway</td></tr>
+                                <tr><td>Colm O'Riordan</td><td>University of Galway</td></tr>
+                                <tr><td>Paul Buitelaar</td><td>University of Galway</td></tr>
+                                <tr><td>Michael Schukat</td><td>University of Galway</td></tr>
+                                <tr><td>James McDermott</td><td>University of Galway</td></tr>
+                                <tr><td>John P. McCrae</td><td>University of Galway</td></tr>
+                                <tr><td>Frank Glavin</td><td>University of Galway</td></tr>
+                                <tr><td>Elham Alghamdi</td><td>University College Dublin</td></tr>
+                                <tr><td>Declan Delaney</td><td>University College Dublin</td></tr>
+                                <tr><td>Arjun Pakrashi</td><td>University College Dublin</td></tr>
+                                <tr><td>Padraig Cunningham</td><td>University College Dublin</td></tr>
+                                <tr><td>Ellen Rushe</td><td>University College Dublin</td></tr>
+                                <tr><td>Georgiana Ifrim</td><td>University College Dublin</td></tr>
+                                <tr><td>Brendan Murphy</td><td>University College Dublin</td></tr>
+                                <tr><td>Brian Mac Namee</td><td>University College Dublin</td></tr>
+                                <tr><td>Simon Caton</td><td>University College Dublin</td></tr>
+                                <tr><td>Barry Smyth</td><td>University College Dublin</td></tr>
+                                <tr><td>Rob Brennan</td><td>University College Dublin</td></tr>
+                                <tr><td>Derek Greene</td><td>University College Dublin</td></tr>
+                                <tr><td>Fintan Costello</td><td>University College Dublin</td></tr>
+                                <tr><td>Fred Cummins</td><td>University College Dublin</td></tr>
+                                <tr><td>Mark Keane</td><td>University College Dublin</td></tr>
+                                <tr><td>Aonghus Lawlor</td><td>University College Dublin</td></tr>
+                                <tr><td>Rem Collier</td><td>University College Dublin</td></tr>
+                                <tr><td>Ruihai Dong</td><td>University College Dublin</td></tr>
+                                <tr><td>Barry O'Sullivan</td><td>University College Cork</td></tr>
+                                <tr><td>Guillaume Escamocher</td><td>University College Cork</td></tr>
+                                <tr><td>Begum Genc</td><td>University College Cork</td></tr>
+                                <tr><td>Ken Brown</td><td>University College Cork</td></tr>
+                                <tr><td>Andrea Balogh</td><td>University College Cork</td></tr>
+                                <tr><td>Mark O Sullivan</td><td>University College Cork</td></tr>
+                                <tr><td>Gregory Provan</td><td>University College Cork</td></tr>
+                                <tr><td>Derek Bridge</td><td>University College Cork</td></tr>
+                                <tr><td>Darryl Charles</td><td>Ulster University</td></tr>
+                                <tr><td>Paul Mc Kevitt</td><td>Ulster University</td></tr>
+                                <tr><td>Debbie Rankin</td><td>Ulster University</td></tr>
+                                <tr><td>Michaela Black</td><td>Ulster University</td></tr>
+                                <tr><td>Ivana Dusparic</td><td>Trinity College Dublin</td></tr>
+                                <tr><td>Lucy McKenna</td><td>Trinity College Dublin</td></tr>
+                                <tr><td>John Gilligan</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Bianca Schoen Phelan</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Eoin Rogers</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Anh Duong Trinh</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Bujar Raufi</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Pierpaolo Dondio</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Bojan Božić</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Sarah Jane Delany</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Lucas Rizzo</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Robert Ross</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Hung Ngo</td><td>Technological University Dublin</td></tr>
+                                <tr><td>James Usher</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Susan Mckeever</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Luca Longo</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Elizabeth Hunter</td><td>Technological University Dublin</td></tr>
+                                <tr><td>Xhemal Zenuni</td><td>SEE University in Tetovo</td></tr>
+                                <tr><td>Conor Lynch</td><td>Nimbus Research Centre (MTU)</td></tr>
+                                <tr><td>Ted Scully</td><td>Munster Technologicial University</td></tr>
+                                <tr><td>Ryan Donovan</td><td>Munster Technologicial University</td></tr>
+                                <tr><td>Ignacio Castineiras</td><td>Munster Technologicial University</td></tr>
+                                <tr><td>Kashif Ahmad</td><td>Munster Technological University</td></tr>
+                                <tr><td>Ruairi O'Reilly</td><td>Munster Technological University</td></tr>
+                                <tr><td>Alison O'Shea</td><td>Munster Technological University</td></tr>
+                                <tr><td>Niall O Mahony</td><td>Munster Technological University</td></tr>
+                                <tr><td>Brian Murphy</td><td>Munster Technological University</td></tr>
+                                <tr><td>Daniel Riordan</td><td>Munster Technological University</td></tr>
+                                <tr><td>Diarmuid Grimes</td><td>Munster Technological University</td></tr>
+                                <tr><td>Haithem Afli</td><td>Munster Technological University</td></tr>
+                                <tr><td>Alex Vakaloudis</td><td>Munster Technological University</td></tr>
+                                <tr><td>Christian Beder</td><td>Munster Technological University</td></tr>
+                                <tr><td>Louise Connell</td><td>Maynooth University</td></tr>
+                                <tr><td>Ralf Bierig</td><td>Maynooth University</td></tr>
+                                <tr><td>Diarmuid O'Donoghue</td><td>Maynooth University</td></tr>
+                                <tr><td>Deirdre Desmond</td><td>Maynooth University</td></tr>
+                                <tr><td>Anila Mjeda</td><td>Lero</td></tr>
+                                <tr><td>Tiziana Margaria</td><td>Lero</td></tr>
+                                <tr><td>Luis Quesada</td><td>Insight Centre for Data Analytics (UCC)</td></tr>
+                                <tr><td>Nic Wilson</td><td>Insight Centre for Data Analytics (UCC)</td></tr>
+                                <tr><td>Julia Dietlmeier</td><td>Insight Centre for Data Analytics</td></tr>
+                                <tr><td>Steve Prestwich</td><td>Insight Centre for Data Analytics</td></tr>
+                                <tr><td>Diego Carraro</td><td>Insight Centre for Data Analytics</td></tr>
+                                <tr><td>Ken Duffy</td><td>Hamilton InstituteMaynooth University</td></tr>
+                                <tr><td>Takfarinas Saber</td><td>Dublin City University</td></tr>
+                                <tr><td>Alan Smeaton</td><td>Dublin City University</td></tr>
+                                <tr><td>Suzanne Little</td><td>Dublin City University</td></tr>
+                                <tr><td>Lifeng Han</td><td>Dublin City University</td></tr>
+                                <tr><td>Gareth Jones</td><td>Dublin City University</td></tr>
+                                <tr><td>Marija Bezbradica</td><td>Dublin City University</td></tr>
+                                <tr><td>Julio Noe Hernandez Torres</td><td>Dublin City University</td></tr>
+                                <tr><td>Liam Marnane</td><td>University College Cork</td></tr>
+                                <tr><td>Seamus Dowling</td><td>Atlantic Technological University</td></tr>
+                                <tr><td>Harshvardhan J. Pandit</td><td>ADAPT Centre (TCD)</td></tr>
+                                <tr><td>Brian Davis</td><td>ADAPT Centre</td></tr>
+                                <tr><td>Paul Walsh</td><td>Accenture</td></tr>
+                                <tr><td>Alexey Tarasov</td><td>2K Games Dublin</td></tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Remove pagination and search bar-->
+                            <script>
+                                $('#sortableCommitteeTable').DataTable({"paging":false,"searching":false})
+                            </script>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- About-->
+    <section class="page-section bg-light" id="Sponsors">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-left">
+                    <h2 class="text-black mt-0">AICS Sponsors 2023</h2>
+                    <hr class="divider" />
+                    <p class="text-black-75 mb-4">
+                        If you are interested in sponsoring AICS2023 then please download the <a href="./static/assets/files/AICS2023_Prospectus.pdf">AICS2023 sponsorship prospectus</a>. A sincere thanks to our sponsors to date:
+                    </p>
+                </div>
+
+                <div class="d-flex flex-wrap flex-row justify-content-center align-items-center mb-5">
+
+                    <a class="thumbnail" href="#">
+                        <img class="thumbnail img-responsive" src="./static/assets/img/atu-logo-colour.png" width="300px" alt="Atlantic Technological University Logo">
+                    </a>
+                </div>
+                <div class="w-80 d-flex flex-row flex-wrap justify-content-center">
+                    <a class="thumbnail mx-2 mb-5 px-lg-5" href="#">
+                        <img class="thumbnail img-responsive" src="./static/assets/img/uu-logo-colour.png" width="216px" alt="Ulster University logo">
+                    </a>
+
+                    <a class="thumbnail mx-2 mb-5 px-lg-5" href="#">
+                        <img class="thumbnail img-responsive" src="./static/assets/img/seagate-logo.png" width="252px" alt="Seagate logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <section class="page-section bg-dark" id="accommodation">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-12 text-center">
+                <h4 class="text-white mt-0">Accommmodation</h4>
+                <hr class="divider" />
+
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-4 text-left text-light">
+                            <h5 class="text-white mt-0">Hotels</h5>
+
+                            <table class="table table-striped table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Venue Dist.</th>
+                                        <th scope="col">Conf. Travel</th>
+                                        <th scope="col">Prices</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <th scope="row"><a href="https://www.mounterrigal.com/">Mount Errigal Hotel</a></th>
+                                        <td>650m</td>
+                                        <td>8 minute walk</td>
+                                        <td>From €130 per night</td>
+                                    </tr>
+                              
+                                    <tr>
+                                        <th scope="row"><a href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny">Radisson Blu Hotel</a></th>
+                                        <td>1.4km</td>
+                                        <td>18 minute walk</td>
+                                        <td>From €189</td>
+                                    </tr>
+                                    
+                                    <tr>
+
+                                        <th scope="row"><a href="https://www.dillons-hotel.ie/">Dillons Hotel</a></th>
+                                        <td>1.2km</td>
+                                        <td>17 minute walk</td>
+                                        <td>From €95 per night</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+
+                        </div>
+                        <div class="col-lg-4 text-left text-light">
+                            <h5 class="text-white mt-0">Other Accomodation</h5>
+
+                            <table class="table table-striped table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Venue Dist.</th>
+                                        <th scope="col">Conf. Travel</th>
+                                        <th scope="col">Prices</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><a href="#">Clanree Hotel</a></th>
+                                        <td>1.8km</td>
+                                        <td>23 minute walk</td>
+                                        <td>From €100 per night</td>
+                                    </tr>
+                                    <tr>
+
+                                        <th scope="row"><a href="#">Station House Hotel</a></th>
+                                        <td>1.7km</td>
+                                        <td>21 minute walk</td>
+                                        <td>From €90 per night</td>
+                                    </tr>
+				    <tr>
+					<td colspan="4">There are various B&B and Hostel options available in Letterkenny also. Please contact accomodation providers directly.</td>
+				    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="travel">
+            <div class="col-lg-12 text-center">
+                <h4 class="text-white mt-0">Travel</h4>
+                <hr class="divider" />
+                
+                <p class="text-white mt-0" >Letterkenny is connected to cities such as Dublin and Galway via the bus network. It is possible to get to Letterkenny by bus from Dublin using Route 32 from Dublin's Busáras, this service operates via Dublin Airport and Monaghan bus station. Route 64 will get you to Letterkenny from Galway via Sligo. The bus station in Letterkenny is located 550m from ATU Letterkenny Campus, only a 7 minute walk.</p>
+
+                <p class="text-white mt-0" >Free parking is available at the ATU Donegal Campus (subject to availability). Further parking is available in the multi-story car park on the Pearse Road opposite McGinley's Motors. To find out more information regarding parking near the ATU Campus, see the following <a href="https://www.lyit.ie/About/Campus-Facilities/Maps-Transport/Parking">link.</a></p>
+
+
+
+            </div>
+            </section>
+        </div>
+    </div>
+</section>
+    <!-- Footer
+    <footer class="page-footer bg-dark py-5">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Atlantic Technological University</div></div>
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">AICS2022 - Code of conduct</div></div>
+        <div class="small"><a href="./static/assets/img/call.jpg" target="blank">&nbsp;</a></div>
+    </footer>
+    -->
+
+    <footer class="page-footer bg-dark py-5">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+                    <!-- Links -->
+                    <!-- <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5> -->
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="conduct.html">Code of conduct</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <!--
+
+                      <hr class="clearfix w-100 d-md-none">
+                      <div class="col-md-3 mx-auto">
+
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#!">Link 1</a>
+                          </li>
+                          <li>
+                            <a href="#!">Link 2</a>
+                          </li>
+                        </ul>
+
+                      </div>
+                      -->
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Atlantic Technological University</div></div>
+
+    </footer>
+    <!-- Footer -->
+    <!-- Bootstrap core JS-->
+    <!-- DUPLICATE IMPORT - commented outdated import, moved updated import from <body> -->
+    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="./static/js/scripts.js"></script>
+    <script src="./static/js/countdown.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+</body>
+</html>
