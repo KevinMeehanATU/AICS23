@@ -72,4 +72,29 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Show More/Show Less code
+	var toggleButton = document.getElementById('toggleBio');
+	var bio1Collapse = document.getElementById('bio_1_collapse');
+
+	if (toggleButton && bio1Collapse) {
+		// Check the initial state of the collapsible element
+		var isCollapsed = !bio1Collapse.classList.contains('show');
+    
+		// Set the initial button text based on the initial state
+		toggleButton.textContent = isCollapsed ? 'Show More' : 'Show Less';
+
+		toggleButton.addEventListener('click', function () {
+			if (isCollapsed) {
+				bio1Collapse.classList.add('show');
+				toggleButton.textContent = 'Show Less';
+			} else {
+				bio1Collapse.classList.remove('show');
+				toggleButton.textContent = 'Show More';
+			}
+        
+			// Toggle the state
+			isCollapsed = !isCollapsed;
+		});
+	}
+
 });
