@@ -73,23 +73,47 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     // Show More/Show Less code
-	var toggleButton = document.getElementById('toggleBio');
-	var bio1Collapse = document.getElementById('bio_1_collapse');
+	var toggleButton1 = document.getElementById('toggleBio1');
+	var bio1Collapse1 = document.getElementById('bio_1_collapse');
 
-	if (toggleButton && bio1Collapse) {
+	if (toggleButton1 && bio1Collapse1) {
 		// Check the initial state of the collapsible element
-		var isCollapsed = !bio1Collapse.classList.contains('show');
+		var isCollapsed = !bio1Collapse1.classList.contains('show');
     
 		// Set the initial button text based on the initial state
-		toggleButton.textContent = isCollapsed ? 'Show More' : 'Show Less';
+		toggleButton1.textContent = isCollapsed ? 'Show More' : 'Show Less';
 
-		toggleButton.addEventListener('click', function () {
+		toggleButton1.addEventListener('click', function () {
 			if (isCollapsed) {
-				bio1Collapse.classList.add('show');
-				toggleButton.textContent = 'Show Less';
+				bio1Collapse1.classList.add('show');
+				toggleButton1.textContent = 'Show Less';
 			} else {
-				bio1Collapse.classList.remove('show');
-				toggleButton.textContent = 'Show More';
+				bio1Collapse1.classList.remove('show');
+				toggleButton1.textContent = 'Show More';
+			}
+        
+			// Toggle the state
+			isCollapsed = !isCollapsed;
+		});
+	}
+	
+	var toggleButton2 = document.getElementById('toggleBio2');
+	var bio1Collapse2 = document.getElementById('bio_2_collapse');
+
+	if (toggleButton2 && bio1Collapse2) {
+		// Check the initial state of the collapsible element
+		var isCollapsed = !bio1Collapse2.classList.contains('show');
+    
+		// Set the initial button text based on the initial state
+		toggleButton2.textContent = isCollapsed ? 'Show More' : 'Show Less';
+
+		toggleButton2.addEventListener('click', function () {
+			if (isCollapsed) {
+				bio1Collapse2.classList.add('show');
+				toggleButton2.textContent = 'Show Less';
+			} else {
+				bio1Collapse2.classList.remove('show');
+				toggleButton2.textContent = 'Show More';
 			}
         
 			// Toggle the state
