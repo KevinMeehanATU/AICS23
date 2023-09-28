@@ -102,13 +102,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
 	if (toggleButton2 && bio1Collapse2) {
 		// Check the initial state of the collapsible element
-		var isCollapsed = !bio1Collapse2.classList.contains('show');
+		var isCollapsed2 = !bio1Collapse2.classList.contains('show');
     
 		// Set the initial button text based on the initial state
-		toggleButton2.textContent = isCollapsed ? 'Show More' : 'Show Less';
+		toggleButton2.textContent = isCollapsed2 ? 'Show More' : 'Show Less';
 
 		toggleButton2.addEventListener('click', function () {
-			if (isCollapsed) {
+			if (isCollapsed2) {
 				bio1Collapse2.classList.add('show');
 				toggleButton2.textContent = 'Show Less';
 			} else {
@@ -117,7 +117,7 @@ window.addEventListener('DOMContentLoaded', event => {
 			}
         
 			// Toggle the state
-			isCollapsed = !isCollapsed;
+			isCollapsed2 = !isCollapsed2;
 		});
 	}
 
