@@ -118,7 +118,34 @@ window.addEventListener('DOMContentLoaded', event => {
         
 			// Toggle the state
 			isCollapsed2 = !isCollapsed2;
+						
 		});
 	}
+
+	var toggleButton3 = document.getElementById('toggleBio3');
+	var bio1Collapse3 = document.getElementById('bio_3_collapse');
+		
+	if (toggleButton3 && bio1Collapse3) {
+		// Check the initial state of the collapsible element
+		var isCollapsed3 = !bio1Collapse3.classList.contains('show');
+    
+		// Set the initial button text based on the initial state
+		toggleButton3.textContent = isCollapsed3 ? 'Show More' : 'Show Less';
+		
+		toggleButton3.addEventListener('click', function () {		
+			if (isCollapsed3) {
+				bio1Collapse3.classList.add('show');
+				toggleButton3.textContent = 'Show Less';
+			} else {
+				bio1Collapse3.classList.remove('show');
+				toggleButton3.textContent = 'Show More';
+			}
+			
+			// Toggle the state
+			isCollapsed3 = !isCollapsed3;
+			
+		});
+	}
+
 
 });
